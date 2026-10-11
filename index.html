@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Effect privacy policy</title>
+<meta name="description" content="What the Effect study app stores, what stays on your phone, and how to delete your data.">
+<style>
+  :root { --bg: #ffffff; --text: #1b1714; --muted: #5d554e; --line: #e7e1da; --accent: #c4581f; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0d0b0a; --text: #f3eee8; --muted: #b3aaa1; --line: #2a2420; --accent: #ffa36b; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Effect privacy policy</h1>
+  <p class="muted">Last updated 11 October 2026</p>
+
+  <p>Effect (package <code>com.effect.study</code>) is a study planner and focus app for school students. It builds a study
+  plan from your class, board and target score, times your focus sessions, and blocks the apps you choose while you study.
+  This page says what Effect stores, what never leaves your phone, and how to delete your data. "We" means the team that
+  makes Effect.</p>
+
+  <h2>What we store on our server</h2>
+  <p>When you first open Effect, it creates an anonymous account for you. There is no email address or password. These are
+  kept with that account, so your plan and progress come back if you reinstall on the same account:</p>
+  <ul>
+    <li>The first name you type, and your class, board, stream, state, target score, finish date and exam dates.</li>
+    <li>Your study record: focus sessions and their minutes, the chapters and topics you mark, questions solved, doubts,
+      revisions, and the study sessions you plan (with the names you give them).</li>
+    <li>Your settings: the apps you set a daily limit on or tell Effect how to count (stored as their package names, for
+      example <code>com.instagram.android</code>), and your focus and reminder settings.</li>
+    <li>The answers you give when you set up the app, such as which kind of app pulls your focus most.</li>
+  </ul>
+  <p>This is stored with Supabase, the database service Effect runs on. It is sent over an encrypted connection (HTTPS), and
+  the database only lets your own anonymous account read it.</p>
+
+  <h2>What stays on your phone</h2>
+  <ul>
+    <li><strong>Screen time and app usage.</strong> With Usage access, Effect reads how long you use each app to show your
+      day, your week and the time lost to distracting apps. These numbers are worked out and kept on your phone.</li>
+    <li><strong>The list of apps on your phone.</strong> Effect reads it so you can pick what to block. Only the package names
+      of apps you set a limit on or classify are stored with your account (see above).</li>
+    <li><strong>Notifications.</strong> With Notification access, Effect removes the notifications of the apps you blocked,
+      while a focus session runs. It does not keep or send their content.</li>
+    <li><strong>The share picture.</strong> When you share your study time, the picture is made on your phone and goes only
+      where you send it.</li>
+  </ul>
+
+  <h2>Location</h2>
+  <p>Only if you tap "Find my state" while setting up, Effect asks for your approximate location once and turns it into the
+  name of your state with Android's own location service. The location itself is not stored or sent to our server. The
+  state you choose is saved with your profile. You can always pick your state from the list instead.</p>
+
+  <h2>Permissions and why Effect asks for them</h2>
+  <ul>
+    <li><strong>Usage access:</strong> to see which app is open, so a blocked app can be stopped during a focus session, and
+      to show your screen time.</li>
+    <li><strong>Display over other apps:</strong> to show the block screen over a blocked app, and session reminders.</li>
+    <li><strong>Notification access</strong> (optional): to silence blocked apps' notifications while you focus.</li>
+    <li><strong>Notifications:</strong> for the session timer, reminders and the revision you planned.</li>
+    <li><strong>Alarms and reminders</strong> (optional): so a planned session starts on time.</li>
+    <li><strong>Run in the background</strong> (optional): so the phone does not stop the blocking in the middle of a
+      session.</li>
+    <li><strong>Approximate location</strong> (optional): only for "Find my state", as described above.</li>
+  </ul>
+
+  <h2>Study on YouTube</h2>
+  <p>Effect can show YouTube's mobile website inside the app for study videos. What you watch and any Google account you sign
+  in with there are between you and YouTube, under YouTube's terms and Google's privacy policy. Effect does not store your
+  watch history on our server. The channels whose videos were blocked are remembered on your phone only, so you can allow
+  one with a tap.</p>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>No ads, and no advertising or analytics tools in the app.</li>
+    <li>We don't sell your data or share it with anyone, other than Supabase storing it for us.</li>
+    <li>We don't read the content of your messages, photos or files.</li>
+  </ul>
+
+  <h2>Deleting your data</h2>
+  <p>Uninstalling Effect removes everything it kept on your phone. To delete what is stored with your account on our server,
+  open Effect, go to Profile, and tap <strong>Delete my data</strong>. It opens an email to us with your account code filled
+  in. Send it and we delete your account and everything stored with it within 30 days, and reply when it is done. You can
+  also write to the address below; include your account code from that screen so we can find your data.</p>
+
+  <h2>Children</h2>
+  <p>Effect is made for school students aged 13 and over. It is not directed at children under 13, and we do not knowingly
+  keep data from them. If you think a child under 13 uses Effect, write to us and we will delete their data.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we update this page and the date at the top.</p>
+
+  <h2>Contact</h2>
+  <p>Email <a href="mailto:guptaayush7570974043@gmail.com">guptaayush7570974043@gmail.com</a></p>
+</main>
+</body>
+</html>
