@@ -23,7 +23,7 @@
 <body>
 <main>
   <h1>Effect privacy policy</h1>
-  <p class="muted">Last updated 11 October 2026</p>
+  <p class="muted">Last updated 21 October 2026</p>
 
   <p>Effect (package <code>com.effect.study</code>) is a study planner and focus app for school students. It builds a study
   plan from your class, board and target score, times your focus sessions, and blocks the apps you choose while you study.
@@ -35,12 +35,24 @@
   kept with that account, so your plan and progress come back if you reinstall on the same account:</p>
   <ul>
     <li>The first name you type, and your class, board, stream, state, target score, finish date and exam dates.</li>
-    <li>Your study record: focus sessions and their minutes, the chapters and topics you mark, questions solved, doubts,
-      revisions, and the study sessions you plan (with the names you give them).</li>
+    <li>Your study record: focus sessions and their minutes, the chapters and topics you mark, questions solved and how
+      many you got right, doubts, revisions and how each revised topic felt (clear, shaky or forgot), the quick check after
+      learning a topic, your answers to the practice questions Effect asks after a practice sitting, the marks of a sample paper and the chapters where you lost marks, and the study sessions you plan
+      (with the names you give them).</li>
+    <li>Where you stood when you started: the chapters you said you had done or half done, and roughly how many questions
+      you had practised.</li>
+    <li>With each focus session, the chapter and topics it was on, and for a practice sitting from your NCERT book, which
+      questions you tried (by their numbers) and which went wrong.</li>
     <li>Your settings: the apps you set a daily limit on or tell Effect how to count (stored as their package names, for
       example <code>com.instagram.android</code>), and your focus and reminder settings.</li>
     <li>The answers you give when you set up the app, such as which kind of app pulls your focus most.</li>
   </ul>
+
+  <h2>Signing in with Google (optional)</h2>
+  <p>Only if you choose to sign in with Google in Settings, so your data comes back on a new phone: your Google account's
+  email address, name and profile picture link are kept with your Effect account by Supabase's sign-in service. Effect never sees your Google
+  password, and it does not read anything else from your Google account. Without it, your account stays anonymous.</p>
+
   <p>This is stored with Supabase, the database service Effect runs on. It is sent over an encrypted connection (HTTPS), and
   the database only lets your own anonymous account read it.</p>
 
@@ -54,6 +66,10 @@
       while a focus session runs. It does not keep or send their content.</li>
     <li><strong>The share picture.</strong> When you share your study time, the picture is made on your phone and goes only
       where you send it.</li>
+    <li><strong>Your notes from Effect.</strong> The notes on how your study is going (why a chapter is slow, the time lost
+      to distracting apps, how many times an app was opened) are worked out on your phone from the numbers above.</li>
+    <li><strong>Study apps and lecture channels.</strong> The minutes you spent in apps you marked as study during a focus
+      session, and the YouTube channels you told Effect belong to a chapter, stay on your phone.</li>
   </ul>
 
   <h2>Location</h2>
@@ -78,7 +94,7 @@
   <p>Effect can show YouTube's mobile website inside the app for study videos. What you watch and any Google account you sign
   in with there are between you and YouTube, under YouTube's terms and Google's privacy policy. Effect does not store your
   watch history on our server. The channels whose videos were blocked are remembered on your phone only, so you can allow
-  one with a tap.</p>
+  one with a tap. When you search for a channel to allow, only the words you type are sent to YouTube to find it.</p>
 
   <h2>What we don't do</h2>
   <ul>
@@ -87,11 +103,16 @@
     <li>We don't read the content of your messages, photos or files.</li>
   </ul>
 
-  <h2>Deleting your data</h2>
+  <h2 id="delete">Deleting your data</h2>
   <p>Uninstalling Effect removes everything it kept on your phone. To delete what is stored with your account on our server,
-  open Effect, go to Profile, and tap <strong>Delete my data</strong>. It opens an email to us with your account code filled
-  in. Send it and we delete your account and everything stored with it within 30 days, and reply when it is done. You can
-  also write to the address below; include your account code from that screen so we can find your data.</p>
+  open Effect, go to Profile, then Settings, and tap <strong>Delete my data</strong>. After you confirm, your account and
+  everything stored with it are deleted from our server straight away, and then the copy on your phone is cleared. If you
+  prefer, the same screen can open an email to us with your account code filled in instead; we then delete everything
+  within 30 days and reply when it is done. You can also write to the address below; include your account code from that
+  screen so we can find your data.</p>
+  <p>If you have already uninstalled Effect and don't have the code, write to us with the first name, class, board and state
+  you gave Effect and roughly when you used it. We delete the account that matches and reply when it is done. If more than
+  one account could be yours, we ask for more details before deleting anything.</p>
 
   <h2>Children</h2>
   <p>Effect is made for school students aged 13 and over. It is not directed at children under 13, and we do not knowingly
@@ -99,6 +120,11 @@
 
   <h2>Changes</h2>
   <p>If this policy changes, we update this page and the date at the top.</p>
+
+  <h2>Help</h2>
+  <p>If you tap "Something not working?" in Help, Effect opens an email to us holding your phone's model, your Android and
+  Effect versions, your account code and which of Effect's permissions are on, so we can help. It is sent only if you send
+  that email.</p>
 
   <h2>Contact</h2>
   <p>Email <a href="mailto:guptaayush7570974043@gmail.com">guptaayush7570974043@gmail.com</a></p>
