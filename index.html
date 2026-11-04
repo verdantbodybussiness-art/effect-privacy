@@ -23,111 +23,93 @@
 <body>
 <main>
   <h1>Effect privacy policy</h1>
-  <p class="muted">Last updated 21 October 2026</p>
+  <p class="muted">Last updated 4 November 2026</p>
 
-  <p>Effect (package <code>com.effect.study</code>) is a study planner and focus app for school students. It builds a study
-  plan from your class, board and target score, times your focus sessions, and blocks the apps you choose while you study.
-  This page says what Effect stores, what never leaves your phone, and how to delete your data. "We" means the team that
-  makes Effect.</p>
+  <p>Effect (<code>com.effect.study</code>) is a study planner and focus app for school students. It builds a study plan from your class, board and target score, times your study sessions, and blocks the apps you choose while you study. This page says what Effect keeps, what stays on your phone, who else gets anything, and how to delete your data. "We" means the team that makes Effect.</p>
 
-  <h2>What we store on our server</h2>
-  <p>When you first open Effect, it creates an anonymous account for you. There is no email address or password. These are
-  kept with that account, so your plan and progress come back if you reinstall on the same account:</p>
+  <h2>What we keep on our server</h2>
+  <p>When you first open Effect, it makes an anonymous account for you, with no email address or password. These are kept with that account:</p>
   <ul>
-    <li>The first name you type, and your class, board, stream, state, target score, finish date and exam dates.</li>
-    <li>Your study record: focus sessions and their minutes, the chapters and topics you mark, questions solved and how
-      many you got right, doubts, revisions and how each revised topic felt (clear, shaky or forgot), the quick check after
-      learning a topic, your answers to the practice questions Effect asks after a practice sitting, the marks of a sample paper and the chapters where you lost marks, and the study sessions you plan
-      (with the names you give them).</li>
-    <li>Where you stood when you started: the chapters you said you had done or half done, and roughly how many questions
-      you had practised.</li>
-    <li>With each focus session, the chapter and topics it was on, and for a practice sitting from your NCERT book, which
-      questions you tried (by their numbers) and which went wrong.</li>
-    <li>Your settings: the apps you set a daily limit on or tell Effect how to count (stored as their package names, for
-      example <code>com.instagram.android</code>), and your focus and reminder settings.</li>
-    <li>The answers you give when you set up the app, such as which kind of app pulls your focus most.</li>
+    <li>The name you type (your first name is enough, up to 24 characters), and your class, board, stream, target score, the hours a day you want to study, finish date and exam dates. For a state board, the board's name tells your state, for example UP Board.</li>
+    <li>Your study record: your sessions with their times and minutes, the chapters and topics they were on, the topics marked Partly or Done (by you, or by Effect from your study time), the chapters completed or redone, the questions you solved and how many got you stuck, doubts, and your revisions (also the ones you moved or did without Effect) with how each revised topic felt.</li>
+    <li>Your answers to the questions Effect asks, after a sitting or when you check yourself: whether each was right, how long it took, and the kind of slip a wrong one was.</li>
+    <li>The papers you solved: how long each took, its marks and the chapters where you said you lost marks.</li>
+    <li>Your plan: the study times you plan with the names you give them, your past one-off study times, the changes you make to a day's plan, the suggested study times you hid for a day, the day each chapter is due for your finish date, and how long a chapter took you when you tell Effect (or that you don't remember).</li>
+    <li>Your streak and points, and the milestones Effect has already shown you (your first session, a chapter finished, a streak, a day you met your goal), so none is shown twice.</li>
+    <li>Where you stood when you started: the chapters you said you had already finished, all or in part.</li>
+    <li>Your settings: the apps you set a daily limit on or tell Effect how to count (kept as their package names, for example <code>com.instagram.android</code>), the YouTube channels you allow, and your focus and reminder settings.</li>
+    <li>If you set up Effect with an earlier version: the kind of app you said pulls you away most, and how many hours a day you guessed it takes.</li>
   </ul>
 
-  <h2>Signing in with Google (optional)</h2>
-  <p>Only if you choose to sign in with Google in Settings, so your data comes back on a new phone: your Google account's
-  email address, name and profile picture link are kept with your Effect account by Supabase's sign-in service. Effect never sees your Google
-  password, and it does not read anything else from your Google account. Without it, your account stays anonymous.</p>
+  <h2>How long we keep it</h2>
+  <p>We keep it for as long as your account exists, also after you uninstall Effect. Nothing is deleted on a timer: it goes when you tap Delete my data or write to us. A sitting you delete goes on its own, and when you sign in with Google on a new phone, the anonymous account that phone had made is deleted.</p>
 
-  <p>This is stored with Supabase, the database service Effect runs on. It is sent over an encrypted connection (HTTPS), and
-  the database only lets your own anonymous account read it.</p>
+  <h2>Signing in with Google (optional)</h2>
+  <p>Only if you choose Sign in with Google in Settings, so your data comes back on a new phone: your Google account's email address, name, profile picture link and Google's ID for that account are kept with your Effect account by the sign-in service, and a copy stays in the sign-in kept on your phone, where Settings shows your email. Effect never sees your Google password and asks Google for nothing else. If that Google account already has Effect data, Effect asks you first, then this phone moves to it and this phone's anonymous account is deleted. Without it, your account stays anonymous.</p>
+
+  <h2>Effect Pro through Google Play</h2>
+  <p>If you subscribe to Effect Pro, Google Play takes the payment. Effect never sees your card, UPI or bank details. When you buy, Effect gives Google Play a scrambled form of your account code (a one-way hash, never the code itself), so the purchase can be matched to your account.</p>
+  <p>The app sends our server Google's purchase code, and our server asks Google about it, then tells Google a new purchase was received, so Google keeps the payment instead of refunding it. We keep that purchase code with your account, with the plan and offer you chose, when it started, when the paid period or the trial ends, whether it renews by itself, whether it is still active, whether it was a test purchase, and the purchase code of a plan it replaced, so Pro is switched on for your account. We don't keep your order number.</p>
+
+  <h2>Where it is kept</h2>
+  <p>Your account is kept with Supabase, the database service Effect runs on. It travels over an encrypted connection (HTTPS), and the database lets only your own account read it.</p>
 
   <h2>What stays on your phone</h2>
   <ul>
-    <li><strong>Screen time and app usage.</strong> With Usage access, Effect reads how long you use each app to show your
-      day, your week and the time lost to distracting apps. These numbers are worked out and kept on your phone.</li>
-    <li><strong>The list of apps on your phone.</strong> Effect reads it so you can pick what to block. Only the package names
-      of apps you set a limit on or classify are stored with your account (see above).</li>
-    <li><strong>Notifications.</strong> With Notification access, Effect removes the notifications of the apps you blocked,
-      while a focus session runs. It does not keep or send their content.</li>
-    <li><strong>The share picture.</strong> When you share your study time, the picture is made on your phone and goes only
-      where you send it.</li>
-    <li><strong>Your notes from Effect.</strong> The notes on how your study is going (why a chapter is slow, the time lost
-      to distracting apps, how many times an app was opened) are worked out on your phone from the numbers above.</li>
-    <li><strong>Study apps and lecture channels.</strong> The minutes you spent in apps you marked as study during a focus
-      session, and the YouTube channels you told Effect belong to a chapter, stay on your phone.</li>
+    <li>Screen time and app usage. With Usage access, Effect reads how long you use each app to show your day, your week and the time lost to distracting apps. These numbers are worked out and kept on your phone.</li>
+    <li>The list of apps on your phone, so you can pick what to block, and the apps you block.</li>
+    <li>Notifications. With Notification access, Effect removes the notifications of the apps you blocked while a session runs, and pauses a blocked app that is playing a video or music. It doesn't keep or send what the notifications say or what was playing.</li>
+    <li>Your notes from Effect: why a chapter is slow, the time lost to distracting apps, how many times an app was opened. They are worked out on your phone.</li>
+    <li>The questions you have already been asked, the lectures you watched, the YouTube channels that were blocked or that you watched lectures from, and the list on the home screen widget.</li>
+    <li>The share picture. It is made on your phone and goes only where you send it.</li>
   </ul>
 
+  <h2>Android's backup</h2>
+  <p>If backup is on in your phone's settings, Android may copy what Effect keeps on your phone into your own Google account's backup, and put it back when you reinstall Effect or move to a new phone. That can bring the same Effect account back, though not always; without it, a reinstall starts a new, empty account. We can't read that copy and it never reaches our server. Turning off backup in your phone's settings stops it.</p>
+
   <h2>Location</h2>
-  <p>Only if you tap "Find my state" while setting up, Effect asks for your approximate location once and turns it into the
-  name of your state with Android's own location service. The location itself is not stored or sent to our server. The
-  state you choose is saved with your profile. You can always pick your state from the list instead.</p>
+  <p>Only if you tap Find my state while setting up, Effect asks for your approximate location once and turns it into the name of your state with Android's own location service. The location itself is not kept or sent to our server. Only the board of the state you choose is saved with your profile, and you can always pick it from the list instead.</p>
 
   <h2>Permissions and why Effect asks for them</h2>
   <ul>
-    <li><strong>Usage access:</strong> to see which app is open, so a blocked app can be stopped during a focus session, and
-      to show your screen time.</li>
-    <li><strong>Display over other apps:</strong> to show the block screen over a blocked app, and session reminders.</li>
-    <li><strong>Notification access</strong> (optional): to silence blocked apps' notifications while you focus.</li>
-    <li><strong>Notifications:</strong> for the session timer, reminders and the revision you planned.</li>
-    <li><strong>Alarms and reminders</strong> (optional): so a planned session starts on time.</li>
-    <li><strong>Run in the background</strong> (optional): so the phone does not stop the blocking in the middle of a
-      session.</li>
-    <li><strong>Approximate location</strong> (optional): only for "Find my state", as described above.</li>
+    <li>Usage access: to see which app is open and how long it has been open today, so a blocked app can be stopped during a session or once its daily limit is used up, so Keep me on track can tell you how long your blocked apps took today, and to show your screen time.</li>
+    <li>Display over other apps: to show the block screen, the daily limit screen, the Keep me on track pop-up, the timer at the edge of the screen during a session, and session reminders.</li>
+    <li>Notification access (optional): to silence blocked apps' notifications while you study, and to pause a video or song a blocked app plays during a session.</li>
+    <li>Notifications (optional): for the session timer, reminders, the revision you planned, your plan each morning, a warning before an app's daily limit runs out, and short notes on your day, like the time on distracting apps or a streak about to end.</li>
+    <li>Alarms and reminders (optional): so a planned session starts on time.</li>
+    <li>Run in the background (optional): so the phone doesn't stop the blocking in the middle of a session.</li>
+    <li>Approximate location (optional): only for Find my state.</li>
   </ul>
 
   <h2>Study on YouTube</h2>
-  <p>Effect can show YouTube's mobile website inside the app for study videos. What you watch and any Google account you sign
-  in with there are between you and YouTube, under YouTube's terms and Google's privacy policy. Effect does not store your
-  watch history on our server. The channels whose videos were blocked are remembered on your phone only, so you can allow
-  one with a tap. When you search for a channel to allow, only the words you type are sent to YouTube to find it.</p>
+  <p>Effect can show YouTube's mobile website inside the app for study videos. To block videos that aren't for study, Effect reads the title and channel of the videos on the page, and to count your lectures it reads how long each one plays. The lectures it counts stay on your phone, and the channels you allow are kept with your focus settings. Effect doesn't keep your watch history on our server. Any Google account you sign in with there is between you and YouTube, under YouTube's terms and Google's privacy policy.</p>
+  <p>When you search for a channel to allow, the words you type are sent to YouTube to find it, along with the YouTube cookies the study page keeps on your phone, so if you signed in to YouTube there, YouTube can link the search to your account.</p>
+  <p>The block screen shows pictures of a few fixed YouTube videos. They are loaded from YouTube's picture server when a session starts, until they are saved on your phone, even if you never use Study on YouTube, and the channels you find or allow show their pictures from YouTube too. These requests ask only for the pictures and carry nothing about you or your study, only what any web request carries, such as your phone's internet address.</p>
 
   <h2>What we don't do</h2>
   <ul>
     <li>No ads, and no advertising or analytics tools in the app.</li>
-    <li>We don't sell your data or share it with anyone, other than Supabase storing it for us.</li>
-    <li>We don't read the content of your messages, photos or files.</li>
+    <li>We don't sell your data. Apart from Supabase keeping it for us, it goes only where this page says: Google Play if you subscribe, Google if you sign in with it, YouTube when you search for a channel, and Android's location service if you tap Find my state.</li>
+    <li>We don't read your messages, photos or files.</li>
   </ul>
 
   <h2 id="delete">Deleting your data</h2>
-  <p>Uninstalling Effect removes everything it kept on your phone. To delete what is stored with your account on our server,
-  open Effect, go to Profile, then Settings, and tap <strong>Delete my data</strong>. After you confirm, your account and
-  everything stored with it are deleted from our server straight away, and then the copy on your phone is cleared. If you
-  prefer, the same screen can open an email to us with your account code filled in instead; we then delete everything
-  within 30 days and reply when it is done. You can also write to the address below; include your account code from that
-  screen so we can find your data.</p>
-  <p>If you have already uninstalled Effect and don't have the code, write to us with the first name, class, board and state
-  you gave Effect and roughly when you used it. We delete the account that matches and reply when it is done. If more than
-  one account could be yours, we ask for more details before deleting anything.</p>
+  <p>Uninstalling Effect removes everything it kept on your phone, apart from any copy in Android's backup (above). To delete what is kept with your account, go to Profile, then Settings, and tap Delete my data. After you confirm, your account and everything kept with it are deleted from our server at once, then Android clears everything Effect kept on your phone. If your phone doesn't allow that, Effect clears what it can itself and closes, and a few things such as your name, your study times and your blocked apps stay on the phone until you uninstall Effect.</p>
+  <p>The same screen can instead open an email to us with your account code filled in; we then delete everything within 30 days and reply when it is done.</p>
+  <p>If you have already uninstalled Effect, write to us with the name, class and board (or state) you gave Effect and roughly when you used it. We delete the account that matches and reply when it is done. If more than one account could be yours, we ask for more details before deleting anything.</p>
 
   <h2>Children</h2>
-  <p>Effect is made for school students aged 13 and over. It is not directed at children under 13, and we do not knowingly
-  keep data from them. If you think a child under 13 uses Effect, write to us and we will delete their data.</p>
-
-  <h2>Changes</h2>
-  <p>If this policy changes, we update this page and the date at the top.</p>
+  <p>Effect is made for school students aged 13 and over. It is not directed at children under 13, and we don't knowingly keep data from them. If you think a child under 13 uses Effect, write to us and we will delete their data.</p>
 
   <h2>Help</h2>
-  <p>If you tap "Something not working?" in Help, Effect opens an email to us holding your phone's model, your Android and
-  Effect versions, your account code and which of Effect's permissions are on, so we can help. It is sent only if you send
-  that email.</p>
+  <p>If you tap Something not working? or Share an idea in Help, Effect opens an email to us holding your phone's model, your Android and Effect versions and your account code (and, for a problem, which of Effect's permissions are on), so we can help. It goes only if you send that email.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we update it here and the date at the top changes.</p>
 
   <h2>Contact</h2>
-  <p>Email <a href="mailto:efact001@gmail.com">efact001@gmail.com</a></p>
+  <p>Write to us at <a href="mailto:efact001@gmail.com">efact001@gmail.com</a>.</p>
+
 </main>
 </body>
 </html>
